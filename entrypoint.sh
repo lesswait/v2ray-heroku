@@ -18,7 +18,7 @@ mkdir /v2raybin
 cd /v2raybin
 wget --no-check-certificate -qO 'v2ray.zip' "https://github.com/v2ray/v2ray-core/releases/download/$VER_1/v2ray-linux-$SYS_Bit.zip"
 unzip v2ray.zip
-cd /v2raybin/v2ray-$VER_1-linux-$SYS_Bit
+cd /v2raybin
 chmod +x v2ray
 chmod +x v2ctl
 rm -rf v2ray.zip
