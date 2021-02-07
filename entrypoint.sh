@@ -26,10 +26,12 @@ rm -rf v2ray.zip
 #下载最新版caddy
 CADDY_TAG_URL="https://api.github.com/repos/caddyserver/caddy/releases/latest"
 CADDY_VER=`wget -qO- "$CADDY_TAG_URL" | grep 'tag_name' | cut -d\" -f4`
+CADDY_VER=v2.3.0
+CADDY_VER_NUM=v2.3.0
 mkdir /caddybin
 mkdir /caddybin/caddy_$CADDY_VER
 cd /caddybin/caddy_$CADDY_VER
-wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/caddyserver/caddy/releases/download/$CADDY_VER/caddy_$CADDY_VER$BitVer"
+wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/caddyserver/caddy/releases/download/$CADDY_VER/caddy_CADDY_VER_NUM$BitVer"
 tar xvf caddy.tar.gz
 chmod +x caddy
 rm -rf caddy.tar.gz
