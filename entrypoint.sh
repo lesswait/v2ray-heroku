@@ -31,7 +31,7 @@ CADDY_VER_NUM="2.3.0"
 mkdir /caddybin
 mkdir /caddybin/caddy_$CADDY_VER
 cd /caddybin/caddy_$CADDY_VER
-wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/caddyserver/caddy/releases/download/$CADDY_VER/caddy_CADDY_VER_NUM$BitVer"
+wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/caddyserver/caddy/releases/download/$CADDY_VER/caddy_$CADDY_VER_NUM$BitVer"
 tar xvf caddy.tar.gz
 chmod +x caddy
 rm -rf caddy.tar.gz
