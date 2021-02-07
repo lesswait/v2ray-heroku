@@ -29,7 +29,7 @@ CADDY_VER=`wget -qO- "$CADDY_TAG_URL" | grep 'tag_name' | cut -d\" -f4`
 mkdir /caddybin
 mkdir /caddybin/caddy_$CADDY_VER
 cd /caddybin/caddy_$CADDY_VER
-wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/mholt/caddy/releases/download/$CADDY_VER/caddy_$CADDY_VER$BitVer"
+wget --no-check-certificate -qO 'caddy.tar.gz' "https://github.com/caddyserver/caddy/releases/download/$CADDY_VER/caddy_$CADDY_VER$BitVer"
 tar xvf caddy.tar.gz
 chmod +x caddy
 rm -rf caddy.tar.gz
