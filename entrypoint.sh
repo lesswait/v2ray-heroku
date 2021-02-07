@@ -63,4 +63,4 @@ echo -e -n "$PORT" >> HerokuCaddyfile
 echo -e -n "$CONFG2" >> HerokuCaddyfile
 echo -e -n "$V2_PATH" >> HerokuCaddyfile
 echo -e -n "$CONFG3" >> HerokuCaddyfile
-./caddy run --config ./HerokuCaddyfile
+./caddy run -config="HerokuCaddyfile"
