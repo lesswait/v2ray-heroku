@@ -63,4 +63,5 @@ echo -e -n "$PORT" >> Caddyfile
 echo -e -n "$CONFG2" >> Caddyfile
 echo -e -n "$V2_PATH" >> Caddyfile
 echo -e -n "$CONFG3" >> Caddyfile
+cat Caddyfile
 ./caddy run
