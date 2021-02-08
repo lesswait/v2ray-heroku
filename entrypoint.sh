@@ -57,10 +57,9 @@ cd /caddybin/caddy_$CADDY_VER
 CONFG1=$(cat /file/c1.confg)
 CONFG2=$(cat /file/c2.confg)
 CONFG3=$(cat /file/c3.confg)
-echo -e -n "$CONFG1" > Caddyfile
-echo -e -n "$PORT" >> Caddyfile
-echo -e -n "$CONFG2" >> Caddyfile
-echo -e -n "$V2_PATH" >> Caddyfile
-echo -e -n "$CONFG3" >> Caddyfile
-cat Caddyfile
-./caddy run
+echo -e -n "$CONFG1" > HerokuCaddyfile
+echo -e -n "$PORT" >> HerokuCaddyfile
+echo -e -n "$CONFG2" >> HerokuCaddyfile
+echo -e -n "$V2_PATH" >> HerokuCaddyfile
+echo -e -n "$CONFG3" >> HerokuCaddyfile
+./caddy -conf="HerokuCaddyfile"
